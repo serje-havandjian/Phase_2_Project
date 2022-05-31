@@ -1,0 +1,80 @@
+{
+  "devs": [
+    {
+      "id": 1,
+      "name": "Cyber Cecil",
+      "field": "Cyber Security",
+      "image": "https://180dc.org/wp-content/uploads/2022/04/Blank-Avatar.png",
+      "like": true
+    },
+    {
+      "id": 2,
+      "name": "Mark",
+      "field": "Product Designer",
+      "image": "https://180dc.org/wp-content/uploads/2022/04/Blank-Avatar.png",
+      "like": true
+    },
+    {
+      "id": 3,
+      "name": "Thomas",
+      "field": "Data Analyst",
+      "image": "https://180dc.org/wp-content/uploads/2022/04/Blank-Avatar.png",
+      "like": false
+    },
+    {
+      "id": 4,
+      "name": "Travis",
+      "field": "Cyber Security",
+      "image": "https://180dc.org/wp-content/uploads/2022/04/Blank-Avatar.png",
+      "like": true
+    },
+    {
+      "id": 5,
+      "name": "Sara",
+      "field": "UX/UI",
+      "image": "https://180dc.org/wp-content/uploads/2022/04/Blank-Avatar.png",
+      "like": false
+    },
+    {
+      "id": 6,
+      "name": "Jeff",
+      "field": "Product Designer",
+      "image": "https://180dc.org/wp-content/uploads/2022/04/Blank-Avatar.png",
+      "like": false
+    },
+    {
+      "id": 7,
+      "name": "Christina",
+      "field": "UX/UI",
+      "image": "https://180dc.org/wp-content/uploads/2022/04/Blank-Avatar.png",
+      "like": false
+    },
+    {
+      "id": 8,
+      "name": "Erika",
+      "field": "Data Analyst",
+      "image": "https://180dc.org/wp-content/uploads/2022/04/Blank-Avatar.png",
+      "like": false
+    },
+    {
+      "id": 9,
+      "name": "Alice",
+      "field": "Product Designer",
+      "image": "https://180dc.org/wp-content/uploads/2022/04/Blank-Avatar.png",
+      "like": true
+    },
+    {
+      "id": 10,
+      "name": "Tyler",
+      "field": "Software Engineer",
+      "image": "https://180dc.org/wp-content/uploads/2022/04/Blank-Avatar.png",
+      "like": true
+    },
+    {
+      "name": "Mike",
+      "field": "Product Designer",
+      "image": "https://180dc.org/wp-content/uploads/2022/04/Blank-Avatar.png",
+      "id": 11
+    }
+  ]
+}
