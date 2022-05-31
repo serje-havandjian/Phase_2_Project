@@ -12,9 +12,9 @@ function App() {
   return (
     <div> 
         <Switch>
-        <Route exact path = "/">
+          <Route exact path = "/">
               <CreateProfile />
-        </Route>
+          </Route>
           <Route exact path = "/HomePage">
             <HomePage />
           </Route>
