@@ -6,8 +6,26 @@ import DevCard from "./DevCard"
 function HomePage(){
 
     const [devsList, setDevsList ] = useState([])
+    const [filterSelection, setFilterSelection] = useState("")
 
-    console.log(devsList)
+
+    function handleFilter(e) {
+        // setFilterSelection(e.target.value)
+        const filteredList = devsList.filter((dev) => {
+            if(dev.field === e.target.value) {
+                return true
+            } else {
+                return false
+            }
+        })
+        // setFilterSelection(filteredList)
+        setDevsList(filteredList)
+    }
+
+    console.log(filterSelection)
+
+
+
 
     const renderDevs = devsList.map((dev)=>{
         function handleClick(){
@@ -22,10 +40,20 @@ function HomePage(){
         .then(response => setDevsList(response))
     }, [])
 
+
+
     return(
-        <div>
+        <div className="home">
             <NavBar />
             "Home"
+            <select onChange={handleFilter}>
+            <option value="" disable selected>Filter By Field...</option>
+                <option value = "Software Engineer" name = "Software Engineer">Software Engineer</option>
+                <option value = "Product Designer" name = "Product Designer"> Product Designer </option>
+                <option value = "Data Analyst" name = "Data Analyst"> Data Analyst </option>
+                <option value = "Cyber Security" name = "Cyber Security"> Cyber Security </option>
+                <option value = "UX/UI" name = "UX/UI"> UX/UI </option>
+            </select>
             {renderDevs}
         </div>
         

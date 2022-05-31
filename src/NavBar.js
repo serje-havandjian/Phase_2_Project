@@ -3,63 +3,69 @@ import { NavLink } from "react-router-dom";
 
 const linkStyles = {
   display: "inline-block",
-  width: "50px",
+  width: "80px",
   padding: "12px",
-  margin: "0 6px 6px",
-  background: "blue",
+  margin: "10px 6px 6px",
+  background: "rgb(208, 226, 235)",
   textDecoration: "none",
-  color: "white",
+  color: "black",
+  
 };
 
 function NavBar() {
   return (
-    <div>
+    <div className="navbar" >
       <NavLink
+        className="navbarItem"
         to="/HomePage"
         exact
         style={linkStyles}
         activeStyle={{
-          background: "darkblue",
+          background: "rgb(110, 132, 143)",
         }}
       >
         Home
       </NavLink>
       <NavLink
+        className="navbarItem"
         to="/About"
         exact
         style={linkStyles}
         activeStyle={{
-          background: "darkblue",
+          background: "rgb(110, 132, 143)",
         }}
       >
         About
       </NavLink>
       <NavLink
+        className="navbarItem"
         to="/MyProfile"
         exact
         style={linkStyles}
         activeStyle={{
-          background: "darkblue",
+          background: "rgb(110, 132, 143)",
         }}
       >
         My Profile
       </NavLink>
       <NavLink
+        className="navbarItem"
         to="/Chatroom"
         exact
         style={linkStyles}
         activeStyle={{
-          background: "darkblue",
+          background: "rgb(110, 132, 143)",
         }}
       >
         ChatRoom
       </NavLink>
       <NavLink
+        className="navbarItem"
         to="/"
         exact
         style={linkStyles}
         activeStyle={{
-          background: "darkblue",
+          background: "rgb(110, 132, 143)",
         }}
       >
         Login

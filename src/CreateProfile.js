@@ -73,6 +73,7 @@ function CreateProfile(){
                         />
                             <br />
                          <select value = {devField} onChange={handleDevField}>
+                            <option value="" disable selected>Select Your Field...</option>
                             <option value = "Software Engineer" name = "Software Engineer">Software Engineer</option>
                             <option value = "Product Designer" name = "Product Designer"> Product Designer </option>
                             <option value = "Data Analyst" name = "Data Analyst"> Data Analyst </option>

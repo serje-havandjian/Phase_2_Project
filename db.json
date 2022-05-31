@@ -75,6 +75,18 @@
       "field": "Product Designer",
       "image": "https://180dc.org/wp-content/uploads/2022/04/Blank-Avatar.png",
       "id": 11
+    },
+    {
+      "name": "Jerry",
+      "field": "UX/UI",
+      "image": "https://180dc.org/wp-content/uploads/2022/04/Blank-Avatar.png",
+      "id": 12
+    },
+    {
+      "name": "dwayne",
+      "field": "Software Engineer",
+      "image": "https://180dc.org/wp-content/uploads/2022/04/Blank-Avatar.png",
+      "id": 13
     }
   ]
 }
