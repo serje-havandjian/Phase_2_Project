@@ -7,7 +7,15 @@ function HomePage(){
 
     const [devsList, setDevsList ] = useState([])
     const [filtered, setFiltered] = useState([])
-  
+
+    function handleSetting(response){
+        setDevsList(response)
+        setFiltered(response)
+    }
+
+    console.log(filtered)
+    console.log(devsList)
+
     function handleFilter(e) {
         
         const filteredList = devsList.filter((dev) => {
@@ -18,11 +26,8 @@ function HomePage(){
             }
         })
         setFiltered(filteredList)
+
     }
-
-
-
-
 
     const renderDevs = filtered.map((dev)=>{
         function handleClick(){
@@ -33,13 +38,10 @@ function HomePage(){
     useEffect(()=>{
         fetch("http://localhost:3000/devs")
         .then(response => response.json())
-        .then(response => setDevsList(response))
+        .then(response => handleSetting(response))
     }, [])
 
   
-
-
-
     return(
         <div className="home">
             <NavBar />

@@ -7,6 +7,7 @@ function About(){
             <NavBar />
             <h1 className="logo">_onlyDevs</h1> 
             <div className="aboutCardsContainer">
+                "MEET HUMBLE FOUNDERS, ROSS GARFIELD AND SERJE HAVANDJIAN. THEIR GRACE KNOWS NO BOUNDS. "
                 <div className="aboutCards">
                     <img className="image" src="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.6435-9/42111145_2455299614487225_2916440711341539328_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=pRIMuaGia4IAX9EV8Gu&_nc_ht=scontent-dfw5-1.xx&oh=00_AT84xPLxbRZs3vdecxpMvzGT20gc9AC2cUFsFJWVZhkrLA&oe=62BCA093"/>
                     <div class="container">
