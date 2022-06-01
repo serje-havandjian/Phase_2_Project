@@ -64,6 +64,7 @@ function CreateProfile({setCurrentUser}){
             <div className="createProfileForm">
                 <h3>Create Your Profile</h3>
                 <form onSubmit={handleCreateProfile} >
+                    <label>Name: </label>
                     <input
                     onChange={handleDevName}
                     value={devName}
@@ -73,6 +74,7 @@ function CreateProfile({setCurrentUser}){
                     className="input-text"
                     />
                     <br />
+                    <label>Avatar: </label>
                     <input
                     onChange={handleDevImage}
                     value={devImage}
@@ -82,6 +84,7 @@ function CreateProfile({setCurrentUser}){
                     className="input-text"
                     />
                     <br />
+                    <label>Field: </label>
                         <select value = {devField} onChange={handleDevField}>
                         <option value="" disable selected>Select Your Field...</option>
                         <option value = "Software Engineer" name = "Software Engineer">Software Engineer</option>
