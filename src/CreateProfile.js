@@ -1,11 +1,12 @@
 import React, { useState } from "react"
 import {useHistory} from "react-router-dom"
+import MyProfile from "./MyProfile"
 
-function CreateProfile(){
+function CreateProfile({setCurrentUser}){
     const history = useHistory()
 
     const [devName, setDevName] = useState("")
-    const [devImage, setDevImage] = useState("https://180dc.org/wp-content/uploads/2022/04/Blank-Avatar.png")
+    const [devImage, setDevImage] = useState("")
     const [devField, setDevField] = useState("")
 
     function handleDevName(e){
@@ -38,55 +39,65 @@ function CreateProfile(){
             },
             body: JSON.stringify(userProfile)
         })
+        .then(res => res.json())
+        .then(user => setCurrentUser(user))
 
-        e.preventDefault()
-        console.log("test")  
+        e.preventDefault()  
         history.push("/HomePage")
 
-        console.log(userProfile)
+        // function passNewUser(name, image, field) {
+        //     const name = devName
+        //     const field = devField
+        //     const image = devImage
+        // }
+        // <MyProfile passNewUser={passNewUser} />
     }
 
 
     return(
-        <div>
-            <h1> Welcome To Only Devs Profile</h1>
-                <div className="container">
-                    <form onSubmit={handleCreateProfile} >
-                        <h2>Pair Programming Is Only One Click Away</h2>
-                        <h3>Create Your Profile</h3>
-                        <input
-                        onChange={handleDevName}
-                        value={devName}
-                        type="text"
-                        name="name"
-                        placeholder="Enter Your Dev Name..."
-                        className="input-text"
-                        />
+        <div className="login">
+            <h1 className="logo">_onlyDevs</h1>
+            <div className="createProfileHeader">
+                <h1> Welcome To onlyDevs!</h1>
+                <h2>Pair Programming is Only a Click Away</h2>
+            </div>
+            <div className="createProfileForm">
+                <h3>Create Your Profile</h3>
+                <form onSubmit={handleCreateProfile} >
+                    <input
+                    onChange={handleDevName}
+                    value={devName}
+                    type="text"
+                    name="name"
+                    placeholder="Enter Your Dev Name..."
+                    className="input-text"
+                    />
+                    <br />
+                    <input
+                    onChange={handleDevImage}
+                    value={devImage}
+                    type="text"
+                    name="image"
+                    placeholder="Enter Your Profile Image..."
+                    className="input-text"
+                    />
+                    <br />
+                        <select value = {devField} onChange={handleDevField}>
+                        <option value="" disable selected>Select Your Field...</option>
+                        <option value = "Software Engineer" name = "Software Engineer">Software Engineer</option>
+                        <option value = "Product Designer" name = "Product Designer"> Product Designer </option>
+                        <option value = "Data Analyst" name = "Data Analyst"> Data Analyst </option>
+                        <option value = "Cyber Security" name = "Cyber Security"> Cyber Security </option>
+                        <option value = "UX/UI" name = "UX/UI"> UX/UI </option>
+                    </select>
                             <br />
-                        <input
-                        onChange={handleDevImage}
-                        value={devImage}
-                        type="text"
-                        name="image"
-                        placeholder="Enter Your Profile Image"
-                        className="input-text"
-                        />
-                            <br />
-                         <select value = {devField} onChange={handleDevField}>
-                            <option value="" disable selected>Select Your Field...</option>
-                            <option value = "Software Engineer" name = "Software Engineer">Software Engineer</option>
-                            <option value = "Product Designer" name = "Product Designer"> Product Designer </option>
-                            <option value = "Data Analyst" name = "Data Analyst"> Data Analyst </option>
-                            <option value = "Cyber Security" name = "Cyber Security"> Cyber Security </option>
-                            <option value = "UX/UI" name = "UX/UI"> UX/UI </option>
-                        </select>
-                            <br />
-                        <button
-                        type="submit"
-                        name="submit"
-                        > Create Your Dev Provile </button> 
-                    </form>
-                </div>
+                    <button
+                    className="createProfileButton"
+                    type="submit"
+                    name="submit"
+                    > Create Your Dev Provile </button> 
+                </form>
+            </div>
         </div>
     )
 }

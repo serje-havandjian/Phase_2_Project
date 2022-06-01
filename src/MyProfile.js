@@ -1,10 +1,44 @@
+import React, { useState } from "react"
 import NavBar from "./NavBar"
-function MyProfile(){
+
+function MyProfile({currentUser}){
+    
+    const [showCard, setShowCard] = useState(true)
+    const [finalMessage, setFinalMessage] = useState(false)
+    const {id, name, image, field} = currentUser
+
+    function handleDeleteProfile() {
+        fetch(`http://localhost:3000/devs/${id}`, {
+            method: "DELETE"
+        })
+        setShowCard(!showCard)
+        setFinalMessage(!finalMessage)
+    }
+  
+
     return(
-        <div>
-            <NavBar />
-            "My Profile Will Be Shown Here"
-        </div>
+        
+            <div className="myProfile">
+                <NavBar />
+                <h1 className="logo">_onlyDevs</h1>
+                {showCard ? <div className="profileCard">
+                    <div className="card"> 
+                        <img className="image" src={image}/>
+                        <div class="container">
+                            <h1>{name}</h1>
+                            <h3>{field}</h3>
+                            <button 
+                                onClick={handleDeleteProfile}
+                                className="trashButton">
+                                🗑️
+                            </button>
+                        </div>
+                    </div>
+                </div> : null}
+                {finalMessage ? <div className="finalMessage">
+                    <h1>Thanks for choosing onlyDevs!</h1>
+                </div> : null}
+            </div>
         
     )
 }

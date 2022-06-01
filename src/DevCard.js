@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import {useHistory} from "react-router-dom"
 
 
-function DevCard({name, image, field, like, handleClick}){
+function DevCard({name, image, field, like}){
 
     const history= useHistory()
 
@@ -32,7 +32,7 @@ function DevCard({name, image, field, like, handleClick}){
             <div class="container">
                  <h1>{name}</h1>
                 <h3>{field}</h3>
-                <button onClick={handleButtonImage}>{buttonImage ? liked : unliked}</button>
+                <button className="heartButton" onClick={handleButtonImage}>{buttonImage ? liked : unliked}</button>
             </div>
         </div>
     )

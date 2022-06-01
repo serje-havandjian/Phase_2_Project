@@ -45,8 +45,8 @@ function HomePage(){
     return(
         <div className="home">
             <NavBar />
-            "Home"
-            <select onChange={handleFilter}>
+            <h1 className="logo">_onlyDevs</h1>
+            <select className="filter" onChange={handleFilter}>
             <option value="" disable selected>Filter By Field...</option>
                 <option value = "Software Engineer" name = "Software Engineer">Software Engineer</option>
                 <option value = "Product Designer" name = "Product Designer"> Product Designer </option>
@@ -54,7 +54,7 @@ function HomePage(){
                 <option value = "Cyber Security" name = "Cyber Security"> Cyber Security </option>
                 <option value = "UX/UI" name = "UX/UI"> UX/UI </option>
             </select>
-            {renderDevs}
+            <div className="cardlist">{renderDevs}</div>
         </div>
         
     )
