@@ -32,7 +32,11 @@ function DevCard({name, image, field, like}){
             <div class="container">
                  <h1>{name}</h1>
                 <h3>{field}</h3>
-                <button className="heartButton" onClick={handleButtonImage}>{buttonImage ? liked : unliked}</button>
+                <button 
+                    className="heartButton" 
+                    onClick={handleButtonImage}>
+                    {buttonImage ? liked : unliked}
+                </button>
             </div>
         </div>
     )

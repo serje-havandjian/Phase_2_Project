@@ -6,11 +6,10 @@ import DevCard from "./DevCard"
 function HomePage(){
 
     const [devsList, setDevsList ] = useState([])
-    const [filterSelection, setFilterSelection] = useState("")
-
-
+    const [filtered, setFiltered] = useState([])
+  
     function handleFilter(e) {
-        // setFilterSelection(e.target.value)
+        
         const filteredList = devsList.filter((dev) => {
             if(dev.field === e.target.value) {
                 return true
@@ -18,18 +17,15 @@ function HomePage(){
                 return false
             }
         })
-        // setFilterSelection(filteredList)
-        setDevsList(filteredList)
+        setFiltered(filteredList)
     }
 
-    console.log(filterSelection)
 
 
 
 
-    const renderDevs = devsList.map((dev)=>{
+    const renderDevs = filtered.map((dev)=>{
         function handleClick(){
-            console.log("test")
         }
         return <DevCard key={dev.id} name={dev.name} field={dev.field} image={dev.image} like={dev.like} handleClick={handleClick} />
     })
@@ -40,6 +36,8 @@ function HomePage(){
         .then(response => setDevsList(response))
     }, [])
 
+  
+
 
 
     return(
@@ -47,7 +45,7 @@ function HomePage(){
             <NavBar />
             <h1 className="logo">_onlyDevs</h1>
             <select className="filter" onChange={handleFilter}>
-            <option value="" disable selected>Filter By Field...</option>
+                <option value="" disable selected>Filter By Field...</option>
                 <option value = "Software Engineer" name = "Software Engineer">Software Engineer</option>
                 <option value = "Product Designer" name = "Product Designer"> Product Designer </option>
                 <option value = "Data Analyst" name = "Data Analyst"> Data Analyst </option>
