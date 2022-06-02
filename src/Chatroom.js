@@ -21,7 +21,9 @@ function ChatRoom(){
         if (message.includes("JavaScript")) { post.append("I know JS, but my help ain\'t cheap. What will you do for me in return?")
         } else if (message.includes("React")) { post.append("React?! that\'s easy! you really need my help?")
         } else if (message.includes("Ruby")) { post.append("Sorry, haven\'t learned Ruby yet. you\'re on your own, pal!")
-        } else { post.append("hey baby ;)")
+        } else if (message.includes("anything")) { post.append("Sounds about right.")
+    }
+        else { post.append("hey baby ;)")
         }
 
     
