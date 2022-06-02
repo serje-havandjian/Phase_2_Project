@@ -99,7 +99,7 @@
       "id": 14
     },
     {
-      "name": "peter",
+      "name": "Peter Parker",
       "field": "Product Designer",
       "image": "https://upload.wikimedia.org/wikipedia/en/2/21/Web_of_Spider-Man_Vol_1_129-1.png",
       "id": 15
@@ -115,6 +115,36 @@
       "field": "Software Engineer",
       "image": "https://image.artistshot.com/pd.96608716.174.1124674.s3.1-front-customized-ffffff-none-x0y0-350-800x800.jpg",
       "id": 17
+    },
+    {
+      "name": "Steven Strange",
+      "field": "Cyber Security",
+      "image": "https://static.wikia.nocookie.net/disney/images/d/dc/Doctor_Strange_-_Profile.png/revision/latest?cb=20210329175918",
+      "id": 18
+    },
+    {
+      "name": "",
+      "field": "",
+      "image": "",
+      "id": 19
+    },
+    {
+      "name": "",
+      "field": "",
+      "image": "",
+      "id": 20
+    },
+    {
+      "name": "",
+      "field": "",
+      "image": "",
+      "id": 21
+    },
+    {
+      "name": "",
+      "field": "",
+      "image": "",
+      "id": 22
     }
   ]
 }

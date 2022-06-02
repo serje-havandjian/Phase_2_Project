@@ -17,16 +17,26 @@ function ChatRoom(){
         post.append(message)
         post.innerHTML+="<br>"
         post.append(" \n From them: ")
-        if (message.includes("help")) { post.append("on my way!")
+        // help & JavaScript
+        if (message.includes("JavaScript")) { post.append("I know JS, but my help ain\'t cheap. What will you do for me in return?")
+        } else if (message.includes("React")) { post.append("React?! that\'s easy! you really need my help?")
+        } else if (message.includes("Ruby")) { post.append("Sorry, haven\'t learned Ruby yet. you\'re on your own, pal!")
         } else { post.append("hey baby ;)")
         }
+
+    
+        
         post.innerHTML+="<br>"
+        setMessage("")
     }
 
     return(
         <div className="chatRoom">
             <NavBar />
-            <h1 className="logo">_onlyDevs</h1>
+            <div className="logo">
+                <h1>_onlyDevs</h1>
+                <h5>Think Farmers Only... <br/>Only Less Shitty</h5>
+            </div>
             <div className="chatHeader">
                 <h1>You Know How To Set State,</h1>
                 <h2>Now Let's Set A Date.</h2> 
@@ -35,6 +45,7 @@ function ChatRoom(){
             <form className="chatForm" onSubmit={handleSubmit}>
                 
                 <input  
+                    id="messageBox"
                     onChange={newMessage}
                     value={message} 
                     placeholder="Type your message here...">

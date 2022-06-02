@@ -6,7 +6,6 @@ const linkStyles = {
   width: "80px",
   padding: "12px",
   margin: "10px 6px 6px",
-  background: "rgb(208, 226, 235)",
   textDecoration: "none",
   color: "black",
   
@@ -21,7 +20,7 @@ function NavBar() {
         exact
         style={linkStyles}
         activeStyle={{
-          background: "rgb(110, 132, 143)",
+          background: "#5d95cc",
         }}
       >
         Home
@@ -32,7 +31,7 @@ function NavBar() {
         exact
         style={linkStyles}
         activeStyle={{
-          background: "rgb(110, 132, 143)",
+          background: "#5d95cc",
         }}
       >
         About
@@ -43,7 +42,7 @@ function NavBar() {
         exact
         style={linkStyles}
         activeStyle={{
-          background: "rgb(110, 132, 143)",
+          background: "#5d95cc",
         }}
       >
         My Profile
@@ -54,7 +53,7 @@ function NavBar() {
         exact
         style={linkStyles}
         activeStyle={{
-          background: "rgb(110, 132, 143)",
+          background: "#5d95cc",
         }}
       >
         ChatRoom
@@ -65,7 +64,7 @@ function NavBar() {
         exact
         style={linkStyles}
         activeStyle={{
-          background: "rgb(110, 132, 143)",
+          background: "#5d95cc",
         }}
       >
         Login

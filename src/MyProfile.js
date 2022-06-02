@@ -20,7 +20,10 @@ function MyProfile({currentUser}){
         
             <div className="myProfile">
                 <NavBar />
-                <h1 className="logo">_onlyDevs</h1>
+                <div className="logo">
+                    <h1>_onlyDevs</h1>
+                    <h5>Think Farmers Only... <br/>Only Less Shitty</h5>
+                </div>
                 {showCard ? <div className="profileCard">
                     <div className="card"> 
                         <img className="image" src={image}/>

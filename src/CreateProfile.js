@@ -56,7 +56,10 @@ function CreateProfile({setCurrentUser}){
 
     return(
         <div className="login">
-            <h1 className="logo">_onlyDevs</h1>
+            <div className="logo">
+                    <h1>_onlyDevs</h1>
+                    <h5>Think Farmers Only... <br/>Only Less Shitty</h5>
+            </div>
             <div className="createProfileHeader">
                 <h1> Welcome To onlyDevs!</h1>
                 <h2>Pair Programming is Only a Click Away</h2>
