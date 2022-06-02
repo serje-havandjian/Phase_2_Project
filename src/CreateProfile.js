@@ -32,7 +32,7 @@ function CreateProfile({setCurrentUser}){
 
         console.log("test2")
         
-        fetch("http://localhost:3000/devs",{
+        fetch("https://onlyd3vs-backend.herokuapp.com/devs",{
             method:"POST",
             headers:{
                 "Content-Type" : "application/json"

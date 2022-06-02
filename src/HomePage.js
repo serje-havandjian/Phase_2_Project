@@ -36,7 +36,7 @@ function HomePage(){
     })
 
     useEffect(()=>{
-        fetch("http://localhost:3000/devs")
+        fetch("https://onlyd3vs-backend.herokuapp.com/devs")
         .then(response => response.json())
         .then(response => handleSetting(response))
     }, [])

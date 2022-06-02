@@ -8,7 +8,7 @@ function MyProfile({currentUser}){
     const {id, name, image, field} = currentUser
 
     function handleDeleteProfile() {
-        fetch(`http://localhost:3000/devs/${id}`, {
+        fetch(`https://onlyd3vs-backend.herokuapp.com/devs/${id}`, {
             method: "DELETE"
         })
         setShowCard(!showCard)
