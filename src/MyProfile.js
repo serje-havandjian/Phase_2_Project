@@ -40,6 +40,7 @@ function MyProfile({currentUser}){
                 </div> : null}
                 {finalMessage ? <div className="finalMessage">
                     <h1>Thanks for choosing onlyDevs!</h1>
+                    <img id="gif" src="https://c.tenor.com/hEV7xHdXGzgAAAAC/goodbye.gif"/>
                 </div> : null}
             </div>
         
