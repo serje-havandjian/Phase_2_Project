@@ -58,7 +58,7 @@ function CreateProfile({setCurrentUser}){
         <div className="login">
             <div className="logo">
                     <h1>_onlyDevs</h1>
-                    <h5>Think Farmers Only... <br/>Only Less Shitty</h5>
+                    <h5>Why Ask Stackoverflow...? <br/>When You Can Ask A _Dev?</h5>
             </div>
             <div className="createProfileHeader">
                 <h1> Welcome To onlyDevs!</h1>

@@ -22,7 +22,7 @@ function MyProfile({currentUser}){
                 <NavBar />
                 <div className="logo">
                     <h1>_onlyDevs</h1>
-                    <h5>Think Farmers Only... <br/>Only Less Shitty</h5>
+                    <h5>Why Ask Stackoverflow...? <br/>When You Can Ask A _Dev?</h5>
                 </div>
                 {showCard ? <div className="profileCard">
                     <div className="card"> 
