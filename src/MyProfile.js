@@ -21,8 +21,8 @@ function MyProfile({currentUser}){
             <div className="myProfile">
                 <NavBar />
                 <div className="logo">
-                    <h1>_onlyDevs</h1>
-                    <h5>Think Farmers Only... <br/>Only Less Shitty</h5>
+                <h1>_onlyDevs</h1>
+                <h5>Why Ask Stack Overflow...<br/>When You Can Ask A Dev?</h5> <br><h5>_OnlyDevs</h5></br>
                 </div>
                 {showCard ? <div className="profileCard">
                     <div className="card"> 

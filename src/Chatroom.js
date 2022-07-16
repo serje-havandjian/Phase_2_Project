@@ -36,8 +36,8 @@ function ChatRoom(){
         <div className="chatRoom">
             <NavBar />
             <div className="logo">
-                <h1>_onlyDevs</h1>
-                <h5>Think Farmers Only... <br/>Only Less Shitty</h5>
+            <h1>_onlyDevs</h1>
+                <h5>Why Ask Stack Overflow...<br/>When You Can Ask A Dev?</h5> <br><h5>_OnlyDevs</h5></br>
             </div>
             <div className="chatHeader">
                 <h1>You Know How To Set State,</h1>
