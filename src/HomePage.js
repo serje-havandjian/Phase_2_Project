@@ -47,7 +47,7 @@ function HomePage(){
             <NavBar />
             <div className="logo">
                 <h1>_onlyDevs</h1>
-                <h5>Why Ask Stackoverflow...? <br/>When You Can Ask A _Dev?</h5>
+                <h5>Why Ask Stackoverflow... <br/>When You Can Ask A _Dev?</h5>
             </div>
             <select className="filter" onChange={handleFilter}>
                 <option value="" disable selected>Filter By Field...</option>

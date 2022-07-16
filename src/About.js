@@ -7,7 +7,7 @@ function About(){
             <NavBar />
             <div className="logo">
                 <h1>_onlyDevs</h1>
-                <h5>Why Ask Stackoverflow...? <br/>When You Can Ask A _Dev?</h5>
+                <h5>Why Ask Stackoverflow... <br/>When You Can Ask A _Dev?</h5>
             </div> 
             <div className="aboutCardsContainer">
                 <div className="aboutCards">
@@ -27,9 +27,9 @@ function About(){
                 </div>
             </div>
             <p id="aboutUs"> 
-            Meet our founders: Ross Garfield and Serje Havandjian.  Ross and Serje built _onlyDevs while at Flatiron School.  _onlyDevs is a prototype marketplace platform where developers can connect with other developers, professionals, and prospective clients.<br></br>
+            Meet our founders, Ross Garfield and Serje Havandjian.  Ross and Serje built _onlyDevs while at Flatiron School.  _onlyDevs is a prototype platform where developers can connect with other developers, professionals, and prospective clients.<br></br>
             
-            _onlyDevs models creating a profile, interacting with current _onlyDevs users, and entering a chatroom with a connection.  Lastly, _onlyDevs highlights Ross' and Serje's skills with React, JSON servers, CSS, and projecting hosting through Heroku.
+            _onlyDevs models creating a profile, interacting with current _onlyDevs users, and entering a chatroom with when a connection occurs.  Lastly, _onlyDevs highlights Ross' and Serje's skills with React, JSON servers, CSS, and hosting through Heroku.
             </p>
         </div>
      

@@ -37,7 +37,7 @@ function ChatRoom(){
             <NavBar />
             <div className="logo">
                 <h1>_onlyDevs</h1>
-                <h5>Why Ask Stackoverflow...? <br/>When You Can Ask A _Dev?</h5>
+                <h5>Why Ask Stackoverflow... <br/>When You Can Ask A _Dev?</h5>
             </div>
             <div className="chatHeader">
                 <h1>You Know How To Set State,</h1>
