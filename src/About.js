@@ -27,7 +27,9 @@ function About(){
                 </div>
             </div>
             <p id="aboutUs"> 
-               Meet our humble yet awesomely righteous founders: Ross Garfield, and Serje Havandjian. It is only through the grace of their wisdom and courage that we bring you this siiiick app for meeting devs. Their humility is rivaled only by the divinity of _onlyDevs. Bask in the glory that is their tireless work incarnate. <br/><br/>Purchase _onlyDevs PRO for a meager tithe of $24.99/mo. <br/>NO refunds.
+            Meet our founders: Ross Garfield, and Serje Havandjian.  Ross and Serje built _onlyDevs while at Flatiron School.  _onlyDevs is a prototype marketplace platform where developers can connect with other developers, professionals, and prospective clients.<br></br>
+            
+            _onlyDevs models creating a profile, interacting with current _onlyDevs users, and entering a chatroom with a connection.  Lastly, _onlyDevs highlights Ross' and Serje's skills with React, JSON servers, CSS, and projecting hosting through Heroku.
             </p>
         </div>
      
