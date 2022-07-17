@@ -27,9 +27,9 @@ function About(){
                 </div>
             </div>
             <p id="aboutUs"> 
-            Meet our founders, Ross Garfield and Serje Havandjian.  Ross and Serje built _onlyDevs while at Flatiron School.  _onlyDevs is a prototype platform where developers can connect with other developers, professionals, and prospective clients.<br></br>
+            Meet our founders, Ross Garfield and Serje Havandjian.  Ross and Serje built _onlyDevs while at Flatiron School.  _onlyDevs is a platform where developers can connect with other developers, professionals, and prospective clients.<br></br>
             
-            _onlyDevs models creating a profile, interacting with current _onlyDevs users, and entering a chatroom with when a connection occurs.  Lastly, _onlyDevs highlights Ross' and Serje's skills with React, JSON servers, CSS, and hosting through Heroku.
+            _onlyDevs allows users to create a profile, interact with current _onlyDevs users, and enter a chatroom with a _dev when a connection occurs.  Lastly, _onlyDevs highlights Ross' and Serje's skills with React, JavaScript, JSON servers, CSS, and hosting through Heroku.
             </p>
         </div>
      
